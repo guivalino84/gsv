@@ -1,35 +1,23 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><br/>
-<htmllang="en"><br/>
-<head><br/>
-<metahttp-equiv="content-type"content="text/html; charset=utf-8"><br/>
- <script src="PegaInternetApplicationComposer.js"></script>
- <script>
-	pega.web.config.gatewayURL = "http://10.205.104.142/prweb"
-	pega.web.config.systemID = "PEGA_LAB";
-	pega.web.config.appName = "LabArq";
-</script>
-<title>Peg
-<title>Pega Web Mashup Page</title><br/>
-</head><br/>
-<body><br/>
-<p>This page will host a Pega Web Mashup</p><br/>
-<script src ='http://10.205.104.142/prweb?pyActivity=pzIncludeMashupScripts'></script>
+<!DOCTYPE html>
+<html>
+<body>  
+<script src ='http://10.205.104.142/prweb/PRServlet??pyActivity=pzIncludeMashupScripts'></script>
  
 <!-- ********************** Begin Pega content ********************** -->
 <div data-pega-gadgetname ='PegaGadget' 
 data-pega-action ='createNewWork' 
 data-pega-action-param-classname ='BS-FW-LabArq-Work-Aprovacao' 
 data-pega-action-param-flowname ='pyStartCase' 
-data-pega-action-param-model ='' 
-data-pega-isdeferloaded ='true' 
+data-pega-isdeferloaded ='false' 
 data-pega-applicationname ='LabArq' 
-data-pega-threadname ='!STANDARD' 
-data-pega-systemid ='PEGA_LAB'
-data-pega-url ='http://10.205.104.142/prweb'
-data-pega-resizetype ='stretch' 
-data-pega-redirectguests ='false' >
+data-pega-threadname ='STANDARD' 
+data-pega-redirectguests='false'
+data-pega-url ='http://10.205.104.142/prweb/PRServlet'
+data-pega-resizetype ='stretch'  >
 <!-- ********************** End Pega content ********************** --> 
 </div>
-</body><br/>
+
+</body>
 </html>
 
+	
