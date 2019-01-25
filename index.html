@@ -3,13 +3,34 @@
 <head><br/>
 <metahttp-equiv="content-type"content="text/html; charset=utf-8"><br/>
 <script src="PegaInternetApplicationComposer.js"></script>
+ <script>
+	pega.web.config.gatewayURL = "http://10.205.104.142/prweb"
+	pega.web.config.systemID = "PEGA_DEV";
+	pega.web.config.appName = "LabArq";
+</script>
 <title>Pega Web Mashup Page</title><br/>
 </head><br/>
 <body><br/>
 <p>This page will host a Pega Web Mashup</p><br/>
+ 
 <!-- ********************** Begin Pega content ********************** -->
+<script src ='http://10.205.104.142/prweb?pyActivity=pzIncludeMashupScripts'></script>
 <script src="PegaInternetApplicationComposer.js"></script>
-<script src ='http://10.205.104.142/prweb/PRServlet?pyActivity=pzIncludeMashupScripts'></script>
-<script src="Index_GSV.asp"></script>
+<div id="PegaGadgetA" data-pega-gadgetname ='PegaGadgetA'
+     style="overflow:auto;"
+data-pega-action ='display' 
+data-pega-action-param-harnessname = 'PegaWebAssignList'
+data-pega-action-param-classname ='Assign-Worklist' 
+	    data-pega-action-param-parameters = 'display'
+	    data-pega-event-onresize = 'onResizeFunc'
+data-pega-action-param-model ='' 
+data-pega-isdeferloaded ='false' 
+data-pega-applicationname ='LabArq' 
+data-pega-threadname ='STANDARD' 
+data-pega-systemid ='PEGA_DEV'
+data-pega-resizetype ='stretch' 
+data-pega-url ='http://10.205.104.142/prweb' 
+data-pega-redirectguests ='false' ></div>
+<!-- ********************** End Pega content ********************** --> 
 </body><br/>
 </html>
