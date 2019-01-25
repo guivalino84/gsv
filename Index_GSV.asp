@@ -41,6 +41,7 @@ pega.web.api.doAction("GadgetA", "load");
 }
 
 </script>
+
 <div id="banner">
     <div id="banner-content">
     </div>
@@ -48,13 +49,38 @@ pega.web.api.doAction("GadgetA", "load");
   <div id="main-content">
   </div
 <div class="wrapper row1">
-<header id="header" class="clear">	 
-<head><br/>
-<metahttp-equiv="content-type"content="text/html; charset=utf-8"><br/>
-<title>Pega Web Mashup Page</title><br/>
-</head><br/>
-</header>
-<body>
+  <header id="header" class="clear">
+	
+    <div id="hgroup">
+      <h1><a href=""><img src="images/bradesco2.png" alt="Logo" height="42px" width="243px"></a></h1>
+    </div>
+	<div id="hgroup">
+      <h1><a href=""><img src="images/Portal.jpg" alt="Logo" padding-left="20px" height="70px" width="180px"></a></h1>
+    </div>
+	
+
+    <form action="#" method="post">
+	  
+	  
+      <fieldset>
+        <legend>Search:</legend>
+        <input type="text" value="Search Our Website&hellip;" onFocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;">
+        <input type="submit" id="sf_submit" value="submit">
+      </fieldset>
+    </form>
+    <nav>
+      <ul>        
+		<li><a href='javascript:;'>Dashboard</a></li>
+		<li><a href='javascript:;' onclick='createNewWork()'>Nova Cotacao</a></li>
+		<li><a href='javascript:;' >Alteracao Catacao</a></li>
+		<li><a href='javascript:;' onclick='myFunction()'>My Work</a></li>
+        <!-- <li><a href="tlink1.html">New Work</a></li>-->
+        
+        
+      </ul>
+    </nav>
+
+
 <!--<input type="submit"  value="Create Work" onclick="createNewWork()">-->
 <div id="GadgetA"
 	style="overflow:auto"
