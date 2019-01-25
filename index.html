@@ -4,6 +4,7 @@
 <metahttp-equiv="content-type"content="text/html; charset=utf-8"><br/>
 <script src="PegaInternetApplicationComposer.js"></script>
  <script>
+        pega.web.config.gatewayURL="http://10.205.104.142/prweb/";
 	pega.web.config.systemID = "PEGA_DEV";
 	pega.web.config.appName = "LabArq";
 </script>
@@ -15,13 +16,10 @@
  
 <!-- ********************** Begin Pega content ********************** -->
 <script src ='http://10.205.104.142/prweb/PRServlet?pyActivity=pzIncludeMashupScripts'></script>
-<div id="GadgetA" data-pega-gadgetname ='GadgetA'
-     style="overflow:auto;"
-data-pega-action ='display' 
-data-pega-action-param-harnessname = 'PegaWebAssignList'
-data-pega-action-param-classname ='Assign-Worklist' 
-	    data-pega-action-param-parameters = 'display'
-	    data-pega-event-onresize = 'onResizeFunc'
+<div id="GadgetA" data-pega-gadgetname ='GadgetA' style="overflow:auto;"
+data-pega-action ='createNewWork' 
+data-pega-action-param-classname ='BS-FW-LabArq-Work-Aprovacao' 
+data-pega-action-param-flowname ='pyStartCase' 
 data-pega-action-param-model ='' 
 data-pega-isdeferloaded ='false' 
 data-pega-applicationname ='LabArq' 
