@@ -25,28 +25,12 @@ data-pega-isdeferloaded ='false'
 data-pega-applicationname ='LabArq' 
 data-pega-threadname ='STANDARD' 
 data-pega-systemid ='PEGA_DEV'
+data-pega-url ='http://10.205.104.142/prweb'
 data-pega-resizetype ='stretch' 
 data-pega-redirectguests ='false' >
 <!-- ********************** End Pega content ********************** --> 
-	<script>  
-	var GadgetA = {
-			actionDefinitions: [  
-			{
-             	 	action: "createNewWork",
-                    	target: {
-					type: "_self"
-				}
-           	},
-			{
-             	 	action: "confirm",
-                    	actionMapping: "refresh"
-           	},
-			{
-             	 	action: "closed",
-                    	actionMapping: "refresh"
-           	}
-          	]
-	};
+<script>  
+pega.web.api.doAction("GadgetA", "createNewWork", "BS-FW-LabArq-Work-Aprovacao", "pyStartCase")
 </script> 
 </div>
 </body><br/>
